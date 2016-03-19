@@ -11,4 +11,6 @@ var server = ws.createServer(function (conn) {
   conn.on('close', function (code, reason) {
     console.log('Connection closed')
   })
-}).listen(8001)
+})
+console.log('Server starting...')
+server.listen(8001)
